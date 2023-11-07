@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class InventroyServiceApplication {
+public class InventoryServiceApplication {
 
 	@Bean
 	public Docket api(){
@@ -31,7 +31,8 @@ public class InventroyServiceApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(InventroyServiceApplication.class, args);
+		SpringApplication.run(InventoryServiceApplication.class, args);
+		System.out.println("Inventory Service Application running...");
 	}
 
 }
