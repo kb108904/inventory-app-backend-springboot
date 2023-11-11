@@ -68,6 +68,6 @@ public class InventoryController {
     }
 
     private boolean isExistingItem(String itemId) {
-        return null != userItemsRepo.findById(itemId);
+        return userItemsRepo.findById(itemId).isPresent();
     }
 }
